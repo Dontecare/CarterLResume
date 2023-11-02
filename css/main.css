@@ -1,4 +1,67 @@
-  @media (max-width: 480px) {
+/* swap themes
+ *,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+
+.toggle {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.toggle-switch {
+  display: inline-block;
+  background: #ccc;
+  border-radius: 16px;
+  width: 58px;
+  height: 32px;
+  position: relative;
+  vertical-align: middle;
+  transition: background 0.25s;
+}
+.toggle-switch:before, .toggle-switch:after {
+  content: "";
+}
+.toggle-switch:before {
+  display: block;
+  background: linear-gradient(to bottom, #fff 0%, #eee 100%);
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.25);
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  transition: left 0.25s;
+}
+.toggle:hover .toggle-switch:before {
+  background: linear-gradient(to bottom, #fff 0%, #fff 100%);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5);
+}
+.toggle-checkbox:checked + .toggle-switch {
+  background: #56c080;
+}
+.toggle-checkbox:checked + .toggle-switch:before {
+  left: 30px;
+}
+
+.toggle-checkbox {
+  position: absolute;
+  visibility: hidden;
+}
+
+.toggle-label {
+  margin-left: 5px;
+  position: relative;
+  top: 2px;
+} */
+
+
+
+/* Expanding picture caroussel */
+@media (max-width: 480px) {
     .options {
       flex-direction: column;
     }
@@ -10,12 +73,12 @@
 
   .items{
     padding: 5px;
+    padding-bottom: 30px;
   }
 
   body {
     min-height: 100vh;
     display: grid;
-    place-items: center;
     background: #100721;
     font-family: "Ubuntu Mono", monospace;
     font-weight: 400;
@@ -30,7 +93,7 @@
 
     > div {
       flex: 0 0 225px;
-      border-radius: 0.5rem;
+      border-radius: 6rem;
       transition: 0.5s ease-in-out;
       cursor: pointer;
       box-shadow: 1px 5px 15px #ce8600;
@@ -38,15 +101,15 @@
       overflow: hidden;
 
       &:nth-of-type(1) {
-        background: url("../img/giz2.jpg")
-          no-repeat 50% / cover;
+        background: url("../img/IMG_8607.PNG");
+        no-repeat 50% / cover;
       }
       &:nth-of-type(2) {
-        background: url("../img/giz2.jpg")
+        background: url("../img/Digital/68961556439__03E752B5-380F-4911-8935-D9F2B5170C04.jpg")
           no-repeat 50% / cover;
       }
       &:nth-of-type(3) {
-        background: url("../img/giz2.jpg")
+        background: url("../img/photography/67322280691__609E27CC-3503-4CC0-84C0-65FEF08E2F8F.jpg")
           no-repeat 50% / cover;
       }
       &:nth-of-type(4) {
@@ -95,26 +158,12 @@
     }
   }
 
-/* Place CSS styles here */
+
+  /* Place CSS styles here */
 
 * {
   box-sizing: border-box;
 }
-
-/* View using phones */
-@media (max-width: 480px) {
-  site-body {
-    background-color: rgb(26, 0, 0);
-  }
-}
-
-/* View using desktop */
-@media (min-width: 768px) {
-  site-body {
-    background-color: rgb(22, 16, 0)
-  }
-}
-
 
 h1 {
   margin-top: 0;
@@ -155,6 +204,16 @@ h5 {
   body {
     background-color: rgb(3, 1, 0);
   }
+}
+
+.dark-mode {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+.light-mode {
+  background-color: rgb(255, 41, 41);
+  color: rgb(230, 184, 184);
 }
 
 label {
@@ -309,6 +368,72 @@ nav a:hover,
   width: 100%;
 }
 
+.drawing-hero {
+  
+  background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.55), 
+      rgba(0, 0, 0, 0.55)
+    ),
+    /* bottom, image */
+    url(../img/drawing/small.JPG);
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 1px 1px 1px #000;
+  min-height: 50vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+}
+
+.digital-hero {
+  
+  background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.55), 
+      rgba(0, 0, 0, 0.55)
+    ),
+    /* bottom, image */
+    url(../img/Digital/68790524928__AD5FC8F2-564E-499C-B9E5-4E24704E3463.jpg);
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 1px 1px 1px #000;
+  min-height: 50vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+}
+
+.painting-hero {
+  
+  background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.55), 
+      rgba(0, 0, 0, 0.55)
+    ),
+    /* bottom, image */
+    url(../img/small.JPG);
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 1px 1px 1px #000;
+  min-height: 50vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+}
+
 .site-header {
   display: flex;
   align-items: center;
@@ -325,7 +450,7 @@ nav a:hover,
 }
 
 .site-footer {
-  background-color: #f50404;
+  background-color: #500000;
   width: 100%;
 }
 
@@ -361,6 +486,7 @@ nav a:hover,
     url(../img/giz2.jpg);
   
   display: flex;
+  width: 100%;
   align-items: center;
   justify-content: center;
   color: white;
