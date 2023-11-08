@@ -112,10 +112,7 @@
         background: url("../img/photography/67322280691__609E27CC-3503-4CC0-84C0-65FEF08E2F8F.jpg")
           no-repeat 50% / cover;
       }
-      &:nth-of-type(4) {
-        background: url("../img/giz2.jpg")
-          no-repeat 50% / cover;
-      }
+
 
       .select-item {
         font-size: 1.5rem;
@@ -232,6 +229,10 @@ h5,
 h6 {
   font-family: 'Roboto Slab', serif;
   text-transform: uppercase;
+}
+
+h3 {
+color:#ce8600;
 }
 
 input,
@@ -354,7 +355,7 @@ nav a:hover,
       rgba(0, 0, 0, 0.55)
     ),
     /* bottom, image */
-    url(../img/giz2.jpg);
+    url(../img/Digital/IMG_8494.PNG);
   
   display: flex;
   align-items: center;
@@ -412,7 +413,7 @@ nav a:hover,
   width: 100%;
 }
 
-.painting-hero {
+.photography-hero {
   
   background: 
     linear-gradient(
@@ -420,7 +421,29 @@ nav a:hover,
       rgba(0, 0, 0, 0.55)
     ),
     /* bottom, image */
-    url(../img/small.JPG);
+    url(../img/photography/IMG_6913.JPG);
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 1px 1px 1px #000;
+  min-height: 50vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+}
+
+.contact-hero {
+  
+  background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.55), 
+      rgba(0, 0, 0, 0.55)
+    ),
+    /* bottom, image */
+    url(../img/Digital/almost\ done.jpg);
   
   display: flex;
   align-items: center;
