@@ -360,8 +360,8 @@ nav a:hover,
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
-  text-shadow: 1px 1px 1px #000;
+  color: rgb(152,108,14);
+  text-shadow: 2px 2px 2px #7d0707;
   min-height: 50vh;
   background-repeat: no-repeat;
   background-size: cover;
